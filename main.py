@@ -42,7 +42,7 @@ def describe_images(directory, temperature):
             # 保存描述为txt文件
             text_filename = os.path.splitext(filename)[0] + ".txt"
             text_filepath = os.path.join(directory, text_filename)
-            with open(text_filepath, 'w') as text_file:
+            with open(text_filepath, 'w', encoding='utf-8') as text_file:
                 text_file.write(description)
             
             # 更新log
